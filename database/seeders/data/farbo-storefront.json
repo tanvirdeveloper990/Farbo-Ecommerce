@@ -1,0 +1,159 @@
+{
+  "menu": [
+    {
+      "name": "Generator Parts",
+      "children": [
+        "Engine Parts",
+        "Oil, Air & Fuel Filters",
+        "Alternators & AVR",
+        "Control Panels",
+        "Starter Motors",
+        "Radiators & Cooling",
+        "Gaskets & Seals",
+        "Batteries & Chargers"
+      ]
+    },
+    {
+      "name": "Engineering Products",
+      "children": [
+        "Bearings",
+        "Valves & Fittings",
+        "Pumps & Motors",
+        "Pipes & Flanges",
+        "Hydraulic Parts",
+        "Power Transmission"
+      ]
+    },
+    {
+      "name": "Industrial Supplies",
+      "children": [
+        "Tools & Hardware",
+        "Safety Products",
+        "Electrical Supplies",
+        "Construction Materials",
+        "Welding Equipment",
+        "Lubricants & Chemicals"
+      ]
+    },
+    {
+      "name": "China Sourcing",
+      "children": [
+        "Product Sourcing",
+        "Supplier Verification",
+        "Factory Audit",
+        "Quality Inspection",
+        "Shipping & Logistics",
+        "Customs Clearance"
+      ]
+    },
+    {
+      "name": "Global Trading",
+      "children": [
+        "Import Services",
+        "Export Services",
+        "Freight Forwarding",
+        "Trade Consulting",
+        "Wholesale Supply",
+        "Distributor Program"
+      ]
+    }
+  ],
+  "banners": [
+    {
+      "image": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=1920&h=700&q=80",
+      "name": "Global Trading"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=1920&h=700&q=80",
+      "name": "Industrial Supplies"
+    },
+    {
+      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1920&h=700&q=80",
+      "name": "China Sourcing"
+    }
+  ],
+  "categories": [
+    {
+      "name": "Generator Parts",
+      "image": "https://images.unsplash.com/photo-1707498633827-936bb448b513?auto=format&fit=crop&w=500&h=500&q=80"
+    },
+    {
+      "name": "Engineering Products",
+      "image": "https://images.unsplash.com/photo-1643933871541-090062935680?auto=format&fit=crop&w=500&h=500&q=80"
+    },
+    {
+      "name": "Industrial Supplies",
+      "image": "https://images.unsplash.com/photo-1698031610493-c19fa20dfeab?auto=format&fit=crop&w=500&h=500&q=80"
+    },
+    {
+      "name": "China Sourcing",
+      "image": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=500&h=500&q=80"
+    },
+    {
+      "name": "Global Trading",
+      "image": "https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?auto=format&fit=crop&w=500&h=500&q=80"
+    },
+    {
+      "name": "Safety Equipment",
+      "image": "https://images.unsplash.com/photo-1564483335100-3413b45dbd37?auto=format&fit=crop&w=500&h=500&q=80"
+    },
+    {
+      "name": "Tools & Hardware",
+      "image": "https://images.unsplash.com/photo-1530124566582-a618bc2615dc?auto=format&fit=crop&w=500&h=500&q=80"
+    },
+    {
+      "name": "Electrical Items",
+      "image": "https://images.unsplash.com/photo-1607631755187-298a3f9a640a?auto=format&fit=crop&w=500&h=500&q=80"
+    },
+    {
+      "name": "Construction Materials",
+      "image": "https://images.unsplash.com/photo-1694521787193-9293daeddbaa?auto=format&fit=crop&w=500&h=500&q=80"
+    },
+    {
+      "name": "Valves & Pumps",
+      "image": "https://images.unsplash.com/photo-1759148414485-5f624fe9d1ea?auto=format&fit=crop&w=500&h=500&q=80"
+    }
+  ],
+  "products": [
+    {
+      "name": "Generator Fuel Filter",
+      "image": "https://images.unsplash.com/photo-1577762616603-0be18aaca637?auto=format&fit=crop&w=600&h=600&q=80",
+      "price": 24
+    },
+    {
+      "name": "Heavy Duty Alternator",
+      "image": "https://images.unsplash.com/photo-1595787142842-7404bc60470d?auto=format&fit=crop&w=600&h=600&q=80",
+      "price": 320
+    },
+    {
+      "name": "Starter Motor Assembly",
+      "image": "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?auto=format&fit=crop&w=600&h=600&q=80",
+      "price": 185
+    },
+    {
+      "name": "Diesel Engine Oil Filter",
+      "image": "https://images.unsplash.com/photo-1552195634-fdabf904f26e?auto=format&fit=crop&w=600&h=600&q=80",
+      "price": 18
+    },
+    {
+      "name": "Cooling Water Pump",
+      "image": "https://images.unsplash.com/photo-1538944017952-1cf2e60868b1?auto=format&fit=crop&w=600&h=600&q=80",
+      "price": 145
+    },
+    {
+      "name": "Generator Air Filter",
+      "image": "https://images.unsplash.com/photo-1777118947168-b6e806cb80cf?auto=format&fit=crop&w=600&h=600&q=80",
+      "price": 32
+    },
+    {
+      "name": "Diesel Generator Engine Set",
+      "image": "https://images.unsplash.com/photo-1523559094051-53bac879eb80?auto=format&fit=crop&w=600&h=600&q=80",
+      "price": 1250
+    },
+    {
+      "name": "Generator Control Panel",
+      "image": "https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?auto=format&fit=crop&w=600&h=600&q=80",
+      "price": 260
+    }
+  ]
+}

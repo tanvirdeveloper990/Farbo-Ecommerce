@@ -1,0 +1,6 @@
+<?php
+use Illuminate\Database\Migrations\Migration;use Illuminate\Database\Schema\Blueprint;use Illuminate\Support\Facades\Schema;use Illuminate\Support\Facades\DB;
+return new class extends Migration {
+public function up():void{Schema::create('discount_codes',function(Blueprint $t){$t->id();$t->string('type',20);$t->string('name',150);$t->string('code',60);$t->decimal('amount',12,2);$t->boolean('status')->default(true);$t->timestamps();$t->unique(['type','code']);});Schema::table('orders',function(Blueprint $t){$t->decimal('discount_amount',12,2)->default(0);$t->decimal('coupon_discount',12,2)->default(0);$t->decimal('gift_card_discount',12,2)->default(0);$t->string('coupon_code',60)->nullable();$t->string('gift_card_code',60)->nullable();});DB::table('permissions')->insertOrIgnore(['name'=>'discounts.manage','description'=>'Manage coupons and gift cards','created_at'=>now(),'updated_at'=>now()]);}
+public function down():void{Schema::table('orders',fn(Blueprint $t)=>$t->dropColumn(['discount_amount','coupon_discount','gift_card_discount','coupon_code','gift_card_code']));Schema::dropIfExists('discount_codes');DB::table('permissions')->where('name','discounts.manage')->delete();}
+};

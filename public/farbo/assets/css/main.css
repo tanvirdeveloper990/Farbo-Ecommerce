@@ -1,0 +1,222 @@
+ html {
+     scroll-behavior: smooth;
+ }
+
+ body {
+     font-family: 'Poppins', sans-serif;
+ }
+
+ .no-scroll {
+     overflow: hidden;
+ }
+
+ /* Slider dots */
+ .dot.active {
+     width: 28px;
+     background: #E30613;
+ }
+
+ /* Thin scrollbar for drawers */
+ .thin-scroll::-webkit-scrollbar {
+     width: 5px;
+ }
+
+ .thin-scroll::-webkit-scrollbar-thumb {
+     background: #cbd5e1;
+     border-radius: 10px;
+ }
+
+ /* Floating button pulse */
+ @keyframes ring {
+     0% {
+         transform: scale(1);
+         opacity: .6
+     }
+
+     100% {
+         transform: scale(1.7);
+         opacity: 0
+     }
+ }
+
+ .ring-pulse::before {
+     content: '';
+     position: absolute;
+     inset: 0;
+     border-radius: 9999px;
+     background: inherit;
+     animation: ring 1.8s ease-out infinite;
+     z-index: -1;
+ }
+
+
+ #catTrack {
+     scrollbar-width: none;
+ }
+
+ #catTrack::-webkit-scrollbar {
+     display: none;
+ }
+
+ .cat-card {
+     flex: 0 0 calc((100% - 0.75rem) / 2);
+ }
+
+ /* mobile: 2 cards */
+ @media (min-width: 640px) {
+     .cat-card {
+         flex-basis: calc((100% - 2rem) / 3);
+     }
+ }
+
+ /* 3 cards */
+ @media (min-width: 768px) {
+     .cat-card {
+         flex-basis: calc((100% - 3rem) / 4);
+     }
+ }
+
+ /* 4 cards */
+ @media (min-width: 1024px) {
+     .cat-card {
+         flex-basis: calc((100% - 5rem) / 6);
+     }
+ }
+
+ /* 6 cards */
+ @media (min-width: 1280px) {
+     .cat-card {
+         flex-basis: calc((100% - 7rem) / 8);
+     }
+ }
+
+ /* 8 cards */
+
+
+ /* product section */
+
+ .ps-track {
+     scrollbar-width: none;
+ }
+
+ .ps-track::-webkit-scrollbar {
+     display: none;
+ }
+
+ /* Cards per view: mobile 2 | sm 3 | md 4 | lg+ 5 */
+ .ps-card {
+     flex: 0 0 calc((100% - 0.75rem) / 2);
+ }
+
+ @media (min-width: 640px) {
+     .ps-card {
+         flex-basis: calc((100% - 2rem) / 3);
+     }
+ }
+
+ @media (min-width: 768px) {
+     .ps-card {
+         flex-basis: calc((100% - 3rem) / 4);
+     }
+ }
+
+ @media (min-width: 1024px) {
+     .ps-card {
+         flex-basis: calc((100% - 5rem) / 5);
+     }
+ }
+
+ .line-clamp-2 {
+     display: -webkit-box;
+     -webkit-line-clamp: 2;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+ }
+
+ /*  */
+ @media (min-width: 1024px) {
+
+     /* Diagonal edge of the white content panel */
+     .wcu-panel {
+         clip-path: polygon(0 0, 100% 0, 86% 100%, 0 100%);
+     }
+ }
+
+ /* single  paje */
+ .pd-thumbs {
+     scrollbar-width: none;
+ }
+
+ .pd-thumbs::-webkit-scrollbar {
+     display: none;
+ }
+
+ .why-summary p + p { margin-top: 1em; }
+ .why-summary ul { list-style: disc; padding-left: 1.5em; }
+ .why-summary ol { list-style: decimal; padding-left: 1.5em; }
+ .why-summary h2, .why-summary h3, .why-summary h4 { font-weight: 700; margin: 1em 0 .5em; }
+ .why-summary a { text-decoration: underline; }
+ .why-summary table { border-collapse: collapse; width: 100%; }
+ .why-summary th, .why-summary td { border: 1px solid #e5e7eb; padding: .5em; }
+ /* Shared storefront palette: light surfaces with restrained blue accents. */
+ body { color: #283747; }
+ .text-brand-navy { color: #283747; }
+ .bg-brand-light { background-color: #f6f8fa; }
+ .bg-brand-navy { background-color: #0B2A5B; }
+ .farbo-topbar { background-color: #dff3fa; border-bottom-color: #cce5ef; }
+ #stickyHeader > nav { background: #faf9f6; border-top: 1px solid #e8edf2; border-bottom: 1px solid #e8edf2; }
+ #desktopNav { display: grid; grid-template-columns: repeat(var(--farbo-nav-count, 6), minmax(0, 1fr)); gap: 0; }
+ #desktopNav > li { min-width: 0; border: 0; }
+ #desktopNav > li > a { width: 100%; min-height: 54px; justify-content: center; padding: 16px 8px; gap: 8px; font-size: 12px; }
+ @media (min-width: 1280px) { #desktopNav > li > a { font-size: 13px; } }
+ #desktopNav > li > a { color: #283747; }
+ #desktopNav > li:hover > a { color: #304b70; }
+ #desktopNav .farbo-nav-dropdown { width: 288px; max-width: calc(100vw - 32px); }
+ #desktopNav .farbo-nav-view-all { padding: 14px 20px; min-height: 48px; width: 100%; box-sizing: border-box; text-align: center; white-space: normal; line-height: 1.6; }
+ #desktopNav .farbo-nav-view-all span { min-width: 0; overflow-wrap: anywhere; }
+ #desktopNav .farbo-nav-view-all i { flex-shrink: 0; }
+ .cat-card { border-color: #e2e8ef; }
+ .cat-card > div:last-child { background: #fff; border-top: 1px solid #e8edf2; }
+ .cat-card > div:last-child h3 { color: #283747; }
+ .cat-card:hover > div:last-child { background: #edf2f7; }
+ .farbo-live-search { position: relative; z-index: 60; }
+ .farbo-live-search:not(#mobileSearch form) { border: 1px solid #d7dfe7; border-radius: 999px; padding: 4px; background: #fff; align-items: center; }
+ .farbo-live-search:not(#mobileSearch form) input { border: 0; border-radius: 999px; height: 38px; box-shadow: none; }
+ .farbo-live-search:not(#mobileSearch form) > button[type="submit"], .farbo-live-search:not(#mobileSearch form) > button:not([type]) { border-radius: 999px; height: 34px; }
+ .farbo-live-search input::-webkit-search-cancel-button { display: none; }
+ .farbo-live-search input[type="search"] { padding-right: 40px; }
+ .farbo-search-clear { position: absolute; right: 12px; top: 8px; width: 30px; height: 30px; color: #304b70; font-size: 24px; line-height: 1; }
+ .farbo-search-clear[hidden], .farbo-search-results[hidden] { display: none; }
+ .farbo-search-results { position: absolute; top: calc(100% + 8px); left: 0; width: 100%; max-height: 510px; overflow-y: auto; background: #fff; border: 1px solid #e7e2dd; border-radius: 16px; box-shadow: 0 12px 30px #1f29371c; }
+ .farbo-search-result { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid #eee9e5; color: #17212d; }
+ .farbo-search-result:last-child { border-bottom: 0; }
+ .farbo-search-result:hover, .farbo-search-result.is-selected { background: #faf7f5; }
+ .farbo-search-result img { width: 44px; height: 48px; flex-shrink: 0; object-fit: cover; border-radius: 7px; }
+ .farbo-search-copy { flex: 1; min-width: 0; }
+ .farbo-search-copy strong { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 13px; font-weight: 600; }
+ .farbo-search-copy small { display: block; margin-top: 4px; color: #8b8b8b; text-transform: uppercase; font-size: 10px; }
+ .farbo-search-price { flex-shrink: 0; font-weight: 600; font-size: 12px; }
+ .farbo-search-empty { padding: 20px 16px; color: #657285; font-size: 13px; }
+ #mobileSearch .farbo-live-search { flex-wrap: wrap; }
+ #mobileSearch .farbo-search-results { position: absolute; top: calc(100% - 4px); left: 16px; width: calc(100% - 32px); margin-top: 0; max-height: min(360px, 55vh); z-index: 70; }
+ #mobileSearch:has(.farbo-live-search input:focus), #mobileSearch:has(.farbo-search-results:not([hidden])) { overflow: visible; }
+ #mobileSearch .farbo-search-clear { right: 68px; }
+ #mobileSearch .farbo-search-copy strong { font-size: 12px; }
+ .farbo-user-avatar { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; object-fit: cover; border: 1px solid #d8e4ef; }
+ .farbo-user-initials { background: #e8f1f8; color: #0b2a5b; font-size: 14px; font-weight: 700; }
+ .farbo-user-name { display: block; max-width: 110px; margin-top: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 11px; font-weight: 600; }
+ #farboSidebarAccount .farbo-user-name { max-width: 200px; margin: 0; font-size: 13px; }
+ @media (max-width: 1023px) { #farboHeaderWishlist, #farboHeaderAccount { display: none !important; } }
+ @media (max-width: 1023px) {
+     .category-product-section .ps-track { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; overflow: visible; scroll-snap-type: none; cursor: auto; }
+     .category-product-section .ps-card { width: auto; min-width: 0; flex-basis: auto; }
+     .category-product-section .ps-card:nth-child(n+7) { display: none; }
+     #cartDrawer { width: 85%; max-width: 384px; }
+     #stickyHeader > header { position: relative; min-height: 72px; }
+     #farboHeaderLogo { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+     #farboHeaderLogo img { height: 50px; width: auto; max-width: min(168px, 42vw); object-fit: contain; }
+     #popularCategoryGrid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+ }
+ .pd-zoom-img {
+     transition: transform .25s ease;
+ }

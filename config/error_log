@@ -1,0 +1,40 @@
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/logging.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/logging.php on line 21
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/database.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/database.php on line 19
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/app.php on line 16
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/auth.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/auth.php on line 17
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/filesystems.php on line 16
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/session.php on line 21
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/mail.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/mail.php on line 17
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/cache.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/cache.php on line 18
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/services.php on line 18
+[01-Oct-2026 14:45:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/config/queue.php on line 16

@@ -1,0 +1,92 @@
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* WhatsApp floating animation */
+@keyframes wa-float {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes wa-wiggle {
+
+    0%,
+    86%,
+    100% {
+        transform: rotate(0);
+    }
+
+    89% {
+        transform: rotate(-14deg);
+    }
+
+    92% {
+        transform: rotate(12deg);
+    }
+
+    95% {
+        transform: rotate(-8deg);
+    }
+}
+
+.wa-float {
+    animation: wa-float 3s ease-in-out infinite;
+}
+
+.wa-wiggle {
+    animation: wa-wiggle 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/*  */
+#catTrack {
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#catTrack::-webkit-scrollbar {
+    display: none;
+}
+
+.cat-outline {
+    color: transparent;
+    -webkit-text-stroke: 1.2px #000;
+}
+
+/*  */
+
+ .na-outline { color: transparent; -webkit-text-stroke: 1.2px #000; }
+
+ /*  */
+  .offer-outline { color: transparent; -webkit-text-stroke: 1.5px #000; }
+
+  /*  */
+  #prodTrack { scroll-behavior: smooth; -ms-overflow-style: none; scrollbar-width: none; }
+  #prodTrack::-webkit-scrollbar { display: none; }
+  .prod-outline { color: transparent; -webkit-text-stroke: 1.2px #000; }

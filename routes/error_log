@@ -1,0 +1,8 @@
+[01-Oct-2026 14:45:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home/chowdhuryit/new-ecom.chowdhuryit.com/routes/web.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/routes/web.php on line 32
+[01-Oct-2026 14:45:29 UTC] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Artisan" not found in /home/chowdhuryit/new-ecom.chowdhuryit.com/routes/console.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/chowdhuryit/new-ecom.chowdhuryit.com/routes/console.php on line 7

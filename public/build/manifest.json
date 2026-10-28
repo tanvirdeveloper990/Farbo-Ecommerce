@@ -1,0 +1,59 @@
+{
+  "_Profile-BBf2zucE.js": {
+    "file": "assets/Profile-BBf2zucE.js",
+    "name": "Profile",
+    "css": [
+      "assets/Profile-Wfw2GFEq.css"
+    ]
+  },
+  "_Profile-Wfw2GFEq.css": {
+    "file": "assets/Profile-Wfw2GFEq.css",
+    "src": "_Profile-Wfw2GFEq.css"
+  },
+  "node_modules/summernote/dist/font/summernote.eot": {
+    "file": "assets/summernote-jt9apK1s.eot",
+    "src": "node_modules/summernote/dist/font/summernote.eot"
+  },
+  "node_modules/summernote/dist/font/summernote.ttf": {
+    "file": "assets/summernote-BDPkqvsB.ttf",
+    "src": "node_modules/summernote/dist/font/summernote.ttf"
+  },
+  "node_modules/summernote/dist/font/summernote.woff": {
+    "file": "assets/summernote-MGhHcnpK.woff",
+    "src": "node_modules/summernote/dist/font/summernote.woff"
+  },
+  "node_modules/summernote/dist/font/summernote.woff2": {
+    "file": "assets/summernote-tk6LuLER.woff2",
+    "src": "node_modules/summernote/dist/font/summernote.woff2"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-BZXFoQyO.js",
+    "name": "app",
+    "src": "resources/js/app.js",
+    "isEntry": true,
+    "imports": [
+      "_Profile-BBf2zucE.js"
+    ],
+    "css": [
+      "assets/app-C8nW-hLh.css"
+    ],
+    "assets": [
+      "assets/summernote-jt9apK1s.eot",
+      "assets/summernote-tk6LuLER.woff2",
+      "assets/summernote-MGhHcnpK.woff",
+      "assets/summernote-BDPkqvsB.ttf"
+    ]
+  },
+  "resources/js/storefront.js": {
+    "file": "assets/storefront-VnnhCkgT.js",
+    "name": "storefront",
+    "src": "resources/js/storefront.js",
+    "isEntry": true,
+    "imports": [
+      "_Profile-BBf2zucE.js"
+    ],
+    "css": [
+      "assets/storefront-BpzWVi2C.css"
+    ]
+  }
+}

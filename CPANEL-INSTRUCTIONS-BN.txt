@@ -1,0 +1,60 @@
+CPANEL DEPLOY - ECOMMERCE STORE
+===============================
+
+1. cPanel-e PHP 8.2+ set korun. PHP extensions: dom, gd, mbstring, pdo_mysql,
+   fileinfo, openssl, xml, curl, bcmath.
+
+2. cPanel MySQL Database Wizard-e database ebong database user banan; user-ke
+   oi database-e ALL PRIVILEGES din.
+
+3. ecommerce-cpanel-deploy.zip public_html-er baire cPanel Home Directory-te
+   upload kore extract korun. Folder-er naam cpanel-deploy thakbe.
+
+4. cPanel Domains-e ei domain-er document root din:
+   /home/CPANEL_USERNAME/cpanel-deploy/public
+   CPANEL_USERNAME nijer hosting username diye replace korun.
+
+5. cpanel-deploy folder-er .env.production.example copy kore .env naam din.
+   .env-e sudhu egulo nijer moto edit korun:
+   - APP_URL=https://YOUR-DOMAIN
+   - DB_HOST, DB_DATABASE, DB_USERNAME, DB_PASSWORD
+   cPanel jodi MySQL hostname na dey, prothome DB_HOST=localhost din.
+   cPanel-er deya database/user-er puro naam (account prefix soho) boshate hobe.
+   APP_DEBUG=false ebong DB_CONNECTION=mysql poriborton korben na.
+
+6. Browser-e https://YOUR-DOMAIN/deploy.php khulun. Form-e deploy key ebong
+   prothom admin account-er name, email, password din. "Deploy and set up store"
+   click korle APP_KEY, database migrations, initial settings/roles, storage link,
+   production caches ebong admin account automatic set up hobe.
+
+7. Setup safal hole one-time deploy.php nijei delete hoye jabe. Tarpor
+   https://YOUR-DOMAIN/admin/login diye login korun. Deploy key sudhu ekbar kaj
+   kore.
+
+ERROR HOLE KI KORBEN
+--------------------
+- Notun package upload kore ager cpanel-deploy folder-e extract/overwrite korun.
+  Nijer toiri kora .env file overwrite ba delete korben na.
+- Browser-e abar https://YOUR-DOMAIN/deploy.php khulun ebong ekoi one-time key
+  din. Notun installer ekhon kon stage-e ebong ki karone themeche page-e bole dibe.
+- MySQL connection error hole cPanel-e DB host/database/user/password ebong
+  database user privileges check kore sudhu .env update korun; tarpor retry.
+- storage permission error hole hosting support-ke cpanel-deploy/storage ebong
+  cpanel-deploy/bootstrap/cache PHP-r jonno writable korte bolun.
+- Error-er screenshot support-e pathanor age kono password/key visible ache kina
+  check korun.
+
+DATA NOTE
+---------
+ZIP-e application code ache, kintu ager products/orders/settings-er database
+data nei. Purono data lagle ager database alada kore export/import korun.
+
+JODI DOCUMENT ROOT CHANGE KORA NA JAY
+-------------------------------------
+Full app cpanel-deploy folder-e public_html-er baire rakhun. cpanel-deploy/public
+folder-er CONTENTS public_html-e copy korun; public folder nije noy. public_html
+er index.php-te ei path-gulo absolute cpanel-deploy path diye update korun:
+  require '/home/CPANEL_USERNAME/cpanel-deploy/vendor/autoload.php';
+  $app = require_once '/home/CPANEL_USERNAME/cpanel-deploy/bootstrap/app.php';
+Maintenance mode path-o app-er storage-e point korte hobe. .env sudhu
+public_html-er baire cpanel-deploy folder-e rakhben.
